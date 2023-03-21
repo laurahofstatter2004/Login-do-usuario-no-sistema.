@@ -1,0 +1,75 @@
+package Classes_de_Conexoes;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+//cadastrar um usuário no banco de dados.
+public class UsuarioDTO {
+
+    @NotBlank
+    private String nome_usuario;
+
+    @NotBlank
+    private String endereco_usuario;
+
+    @NotBlank
+    private String cep_usuario;
+
+    @NotBlank
+    private String telefone_usuario;
+
+    @NotBlank
+    private String senha_usuario;
+
+    @NotBlank
+    @Email
+    private String email_usuario;
+
+    public String getNome_usuario() {
+        return nome_usuario;
+    }
+
+    public void setNome_usuario(String nome_usuario) {
+        this.nome_usuario = nome_usuario;
+    }
+
+    public String getEndereco_usuario() {
+        return endereco_usuario;
+    }
+
+    public void setEndereco_usuario(String endereco_usuario) {
+        this.endereco_usuario = endereco_usuario;
+    }
+
+    public String getCep_usuario() {
+        return cep_usuario;
+    }
+
+    public void setCep_usuario(String cep_usuario) {
+        this.cep_usuario = cep_usuario;
+    }
+
+    public String getTelefone_usuario() {
+        return telefone_usuario;
+    }
+
+    public void setTelefone_usuario(String telefone_usuario) {
+        this.telefone_usuario = telefone_usuario;
+    }
+
+    public String getSenha_usuario() {
+        return senha_usuario;
+    }
+
+    public void setSenha_usuario(String senha_usuario) {
+        this.senha_usuario = senha_usuario;
+    }
+
+    public String getEmail_usuario() {
+        return email_usuario;
+    }
+
+    public void setEmail_usuario(String email_usuario) {
+        this.email_usuario = email_usuario;
+    }
+}
